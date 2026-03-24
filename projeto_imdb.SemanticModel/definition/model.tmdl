@@ -1,0 +1,19 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["imdb_movies"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table imdb_movies
+ref table DateTableTemplate_575e6339-1c4c-4e00-8d08-c222d75af555
+
+ref cultureInfo pt-BR
+
